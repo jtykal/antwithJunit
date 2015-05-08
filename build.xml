@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<project default="main">
+    
+    
+    <target name="main" depends="clean, compile, compress, junit" >
+        <echo>
+            Building the .jar file.
+        </echo>
+    </target>
+    
+    <!-- Define the classpath which includes the junit.jar and the classes after all compiling-->
+    <path id="junit.class.path"> 
+        <pathelement location="lib/junit-4.12.jar" />
+        <pathelement location="lib/hamcrest-core-1.3.jar" />
+        <pathelement location="src" />
+        <pathelement location="bin" />
+    </path>
+
+    <target name="compile">
+        <javac srcdir="src" includeantruntime="false" destdir="bin">
+        <classpath refid="junit.class.path" />
+        </javac>
+    </target>
+
+    <target name="compress">
+        <jar destfile="bin/HelloWorldTest.jar" basedir="bin" includes="*.class">
+        </jar>
+    </target>
+
+    <!-- Run the JUnit Tests -->
+  <!-- Output is XML, could also be plain-->
+      <target name="junit" depends="compress">
+        <junit printsummary="on" fork="false" haltonfailure="yes">
+          <classpath refid="junit.class.path" />
+          <formatter type="xml" />
+          <batchtest todir="testClassFiles">
+            <fileset dir="bin">
+              <include name="**/*Test*.class" />
+            </fileset>
+          </batchtest>
+        </junit>
+      </target>
+
+
+
+    <target name="clean">
+            <delete file="HelloWorldTest.class" />
+            <delete file="HelloWorldTest.jar" />
+    </target>
+        
+</project>
+    
