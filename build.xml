@@ -40,14 +40,14 @@
           </batchtest>
         </junit>
         
-        <junitreport todir="testClassFiles">
-                    <Fileset dir="testClassFiles">
+        <junitreport todir="https://github.com/Dennispetrillo/antwithJunit.git/testClassFiles">
+                    <Fileset dir="https://github.com/Dennispetrillo/antwithJunit.git/testClassFiles">
                         <include name="TEST-*.xml"/>
                     </Fileset>
-                    <report format="frames" todir="testClassFiles"/>
+                    <report format="frames" todir="https://github.com/Dennispetrillo/antwithJunit.git/testClassFiles"/>
         </junitreport>
   </target>
-
+  
     <target name="clean">
             <delete file="HelloWorldTest.class" />
             <delete file="HelloWorldTest.jar" />
