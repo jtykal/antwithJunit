@@ -40,11 +40,11 @@
           </batchtest>
         </junit>
         
-        <junitreport todir="testClassFiles">
-                    <Fileset dir="testClassFiles">
+        <junitreport todir="testClassResults">
+                    <Fileset dir="testClassResults">
                         <include name="TEST-*.xml"/>
                     </Fileset>
-                    <report format="frames" todir="testClassFiles"/>
+                    <report format="frames" todir="testClassResults"/>
         </junitreport>
   </target>
   
