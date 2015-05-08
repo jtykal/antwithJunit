@@ -40,11 +40,11 @@
           </batchtest>
         </junit>
         
-        <junitreport todir="testClassResults">
-                    <Fileset dir="testClassResults">
+        <junitreport todir="testClassFiles">
+                    <Fileset dir="testClassFiles">
                         <include name="TEST-*.xml"/>
                     </Fileset>
-                    <report format="frames" todir="testClassResults"/>
+                    <report format="frames" todir="testClassFiles"/>
         </junitreport>
   </target>
   
@@ -55,7 +55,10 @@
             <delete file="testClassResults/*.xml"/>
             <delete file="testClassResults/*.css"/>
             <delete file="testClassFiles/*.xml"/>
-            <delete file="testClassFiels/Sample/*.html"/>
+            <delete file="testClassFiles/Sample/*.html"/>
+            <delete file="testClassFiles/*.html"/>
+            <delete file="testClassFiles/*.xml"/>
+            <delete file="testClassFiles/*.css"/>
     </target>
         
         
