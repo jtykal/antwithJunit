@@ -51,6 +51,11 @@
     <target name="clean">
             <delete file="HelloWorldTest.class" />
             <delete file="HelloWorldTest.jar" />
+            <delete file="testClassResults/*.html"/>
+            <delete file="testClassResults/*.xml"/>
+            <delete file="testClassResults/*.css"/>
+            <delete file="testClassFiles/*.xml"/>
+            <delete file="testClassFiels/Sample/*.html"/>
     </target>
         
         
