@@ -48,7 +48,7 @@
             <delete file="HelloWorldTest.jar" />
     </target>
         
-        <!-- this is a test -->
+        
         
 </project>
     
