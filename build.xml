@@ -39,14 +39,18 @@
             </fileset>
           </batchtest>
         </junit>
-      </target>
-
-
-
+        
+        <junitreport todir="testClassResults">
+                    <Fileset dir="testClassResults">
+                        <include name="TEST-*.xml"/>
+                    </Fileset>
+                    <report format="frames" todir="testClassResults"/>
+        </junitreport>
+  </target>
+  
     <target name="clean">
             <delete file="HelloWorldTest.class" />
             <delete file="HelloWorldTest.jar" />
     </target>
         
 </project>
-    
