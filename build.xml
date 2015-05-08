@@ -40,11 +40,11 @@
           </batchtest>
         </junit>
         
-        <junitreport todir="https://github.com/Dennispetrillo/antwithJunit.git/testClassFiles">
-                    <Fileset dir="https://github.com/Dennispetrillo/antwithJunit.git/testClassFiles">
+        <junitreport todir="testClassFiles">
+                    <Fileset dir="testClassFiles">
                         <include name="TEST-*.xml"/>
                     </Fileset>
-                    <report format="frames" todir="https://github.com/Dennispetrillo/antwithJunit.git/testClassFiles"/>
+                    <report format="frames" todir="testClassFiles"/>
         </junitreport>
   </target>
   
