@@ -29,7 +29,7 @@
 
     <!-- Run the JUnit Tests -->
   <!-- Output is XML, could also be plain-->
-      <target name="junit" depends="compress">
+      <target name="junit" depends="clean, compile, compress">
         <junit printsummary="on" fork="false" haltonfailure="yes">
           <classpath refid="junit.class.path" />
           <formatter type="xml" />
