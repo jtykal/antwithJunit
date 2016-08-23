@@ -60,7 +60,7 @@
             <delete file="testClassFiles/*.xml"/>
             <delete file="testClassFiles/*.css"/>
     </target>
-<!-- jt test #5 -->
+<!-- jt test #6 -->
    
    
         
