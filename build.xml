@@ -60,8 +60,5 @@
             <delete file="testClassFiles/*.xml"/>
             <delete file="testClassFiles/*.css"/>
     </target>
-<!-- jt - updated for US1 -->
-<!-- jt - updated for US2 -->
 
-        
 </project>
