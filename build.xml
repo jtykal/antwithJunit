@@ -61,7 +61,7 @@
             <delete file="testClassFiles/*.css"/>
     </target>
 <!-- jt - updated for US2 #3 -->
-   
+<!-- jt - change for US3 -->
    
         
 </project>
