@@ -24,5 +24,5 @@ public class HelloWorldTest {
     public void thisIsIgnored() {
     }
 }
-/* jt - updated for US3 */
+/* jt - updated again for US3 */
 
